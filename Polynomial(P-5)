@@ -1,0 +1,16 @@
+@Sadiya
+
+#include <stdio.h>
+
+int poly(int x, int n){
+    if(n==0)    return 1;
+    return poly(x, n-1)*x;
+}
+
+int main(){
+    int n,x,res=0;
+    scanf("%d%d", &x, &n);
+    res = poly(x, n);
+    printf("%d\n", res-1);
+    return 0;
+}
